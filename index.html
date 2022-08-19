@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Dev Web 2022/2</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome!</h1>
+                <ul>
+                    <li><a href="#horario">Horario</a></li>
+                    <li><a href="https://www.ifes.edu.br/images/stories/-publicacoes/calendario-academico/2022/serra/calendario-academico-superiores-2022-serra_23_12.pdf" target="_blank">Calendário</a></li>
+                    <li><a href="ifes.html">Campus Serra</a></li>
+                    <li><a href="#formulario">Pesquisar</a></li>
+                </ul>
+        </header>
+
+        <h2 id="horario">Horário</h2>
+        <table style="border: 1px solid black;">
+            <tr>
+                <th></th>
+                <th>Segunda-feira</th>
+                <th>Terça-feira</th>
+                <th>Quarta-feira</th>
+                <th>Quinta-feira</th>
+                <th>Sexta-feira</th>
+            </tr>
+            <tr>
+                <th>07:30~08:20</th>
+                <th>TPA</th>
+                <th>DOO</th>
+                <th>TPA</th>
+                <th>RC</th>
+                <th>PS</th>
+            </tr>
+            <tr>
+                <th>08:21~09:10</th>
+                <th>TPA</th>
+                <th>DOO</th>
+                <th>TPA</th>
+                <th>RC</th>
+                <th>PS</th>
+            </tr>
+            <tr>
+                <th>09:30~10:20</th>
+                <th>DW</th>
+                <th>RC</th>
+                <th>PS</th>
+                <th>DOO</th>
+                <th>DW</th>
+            </tr>
+            <tr>
+                <th>10:21~11:10</th>
+                <th>DW</th>
+                <th>RC</th>
+                <th>PS</th>
+                <th>DOO</th>
+                <th>DW</th>
+            </tr>
+        </table>
+
+        <h3>Acadêmico</h3>
+        <img src="imagens/horario.png" alt="horario academico">
+
+        <h2 id="formulario">Pesquisar</h2>
+        <form action="https://serra.ifes.edu.br/" method="post">
+            <input type="text" name="searchword">
+            <input type="hidden" name="task" value="search">
+            <input type="hidden" name="option" value="com_search">
+            <input type="submit" value="pesquisar">
+            <input type="reset" value="limpar">
+        </form>
+    </body>
+</html>
