@@ -1,12 +1,17 @@
+padrao = function(data, callback) {
+    callback(200, {'msg': 'rota padrao'})
+}
+
 notFound = function(data, callback) {
     callback(404)
 }
 
 teste = function(data, callback) {
-    callback(200, {'name': 'teste'})
+    callback(200, {'msg': 'teste'})
 }
 
 rotas = {
+    '': padrao,
     'teste' : teste
 }
 
