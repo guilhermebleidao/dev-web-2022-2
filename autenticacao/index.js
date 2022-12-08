@@ -22,12 +22,12 @@ const postRoutes = require('./post/routes')
 app.use('/post', postRoutes)
 
 //APP
-const port = process.env.PORT || 3000
+const porta = 3000
 const start = async () => {
     try {
         mongoose.connect(process.env.MONGO_URI).catch(err => console.log(err))
-        app.listen(port, () => {
-            console.log(`Listen on port ${port}.`)
+        app.listen(porta, () => {
+            console.log(`Ouvindo na porta ${porta}.`)
         })
     } catch (error) {
         console.log(error)
